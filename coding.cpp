@@ -16,7 +16,7 @@ long long mod_exp(long long base, long long exp, long long mod) {
         if (exp % 2 == 1) {  // If exponent is odd
             result = (result * base) % mod;
         }
-        exp = exp >> 1;  // Divide exponent by 2
+        exp = exp/2;  // Divide exponent by 2
         base = (base * base) % mod;  // Square the base
     }
     return result;
